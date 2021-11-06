@@ -1,0 +1,79 @@
+:root {
+  --white: hsl(0deg 0% 84%);
+  --offwhite: hsla(40, 63%, 92%, 1);
+  --black-hsl: 35deg 26% 3%;
+  --black: hsl(var(--black-hsl));
+  --brown-hsl: 40deg 4% 15%;
+  --brown: hsl(var(--brown-hsl));
+  --brown-dark-hsl: 40deg 5% 12%;
+  --brown-dark: hsl(var(--brown-dark-hsl));
+  --grey-hsl: 0deg 0% 30%;
+  --grey: hsl(var(--grey-hsl));
+  --grey-pale-hsl: 0deg 0% 65%;
+  --grey-pale: hsl(var(--grey-pale-hsl));
+  --pale-hsl: 43deg 100% 90%;
+  --pale: hsl(var(--pale-hsl));
+  --gold: hsla(44, 56%, 26%, 1);
+  --gold-text: goldenrod;
+  --green: hsla(161, 77%, 54%, 1);
+  --yellow: hsla(49, 100%, 68%, 1);
+  --skill-red: hsla(348, 29%, 36%, 1);
+  --skill-orange: hsla(22, 49%, 51%, 1);
+  --skill-olive: hsla(59, 100%, 32%, 1);
+  --skill-purple: hsla(279, 50%, 23%, 1);
+  --skill-blue: hsla(192, 57%, 31%, 1);
+  --skill-turq: hsla(162, 44%, 29%, 1);
+}
+
+body {
+  min-height: 100 vh;
+  width: 100 vw;
+  margin: 0;
+  font-family: IM Fell DW Pica;
+  line-height: 1.5;
+  background: #272624;
+  color: var(--yellow);
+  overflow-x: hidden;
+}
+
+.compass.svelte-1qmmj5u.svelte-1qmmj5u,
+.compass.svelte-1qmmj5u.svelte-1qmmj5u:before,
+.compass.svelte-1qmmj5u.svelte-1qmmj5u:after {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1;
+  width: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.compass.svelte-1qmmj5u.svelte-1qmmj5u:before,
+.compass.svelte-1qmmj5u.svelte-1qmmj5u:after {
+  top: 0;
+  left: 0;
+}
+
+@keyframes svelte-1qmmj5u-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.compass.svelte-1qmmj5u.svelte-1qmmj5u {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(https://i.imgur.com/5lotg0T.png);
+}
+
+.compass.svelte-1qmmj5u.svelte-1qmmj5u:before {
+  opacity: 0.6;
+  background-image: url(https://i.imgur.com/SqnYcEb.png);
+  animation: svelte-1qmmj5u-spin 40s linear forwards infinite;
+}
+
+.compass.svelte-1qmmj5u.svelte-1qmmj5u:after {
+  opacity: 0.6;
+  background-image: url(https://i.imgur.com/IRG6mNY.png);
+  animation: svelte-1qmmj5u-spin 30s linear reverse infinite;
+}
